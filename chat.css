@@ -1,0 +1,186 @@
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0px;
+    
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+nav ul li a.active {
+    color: rgb(252, 224, 12);
+}
+.language-selector {
+    margin-right: 20px;
+}
+.language-selector select {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+h1 {
+    color: #333;
+}
+
+
+/* stile chatbot*/
+
+#mainCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chatbox {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#userInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Stile per i messaggi dell'utente */
+.user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6; /* Verde chiaro */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.user-message::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    border-width: 10px 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #dcf8c6;
+}
+
+/* Stile per i messaggi del bot */
+.bot-message {
+    align-self: flex-start;
+    background-color: #ececec; /* Grigio chiaro */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.bot-message::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #ececec transparent transparent;
+}
+
+/* Media queries per dispositivi mobili */
+@media (max-width: 768px) {
+    /* Navbar mobile */
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* Selettore di lingua centrato */
+    .language-selector {
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .language-selector select {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Titolo e testo centrale */
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #chatbox {
+        max-width: 300px;
+        max-height: 350px;
+    }
+    #userInput {
+        max-width: 300px;
+    }
+}

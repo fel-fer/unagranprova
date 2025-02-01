@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        /* Reset base */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar generale */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Per consentire il wrapping su schermi piccoli */
+        }
+
+        /* Stile per la lista della navbar */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap; /* Per consentire il wrapping degli elementi */
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px; /* Ridotto per dispositivi mobili */
+            padding: 8px 15px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        nav ul li a.active {
+            color: rgb(252, 224, 12);
+        }
+
+        /* Selettore di lingua */
+        .language-selector {
+            margin-right: 20px;
+        }
+
+        .language-selector select {
+            font-size: 14px; /* Ridotto per dispositivi mobili */
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Contenitore principale */
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px; /* Dimensione ridotta per dispositivi mobili */
+        }
+
+        p {
+            font-size: 16px; /* Dimensione ridotta per dispositivi mobili */
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Media queries per dispositivi mobili */
+        @media (max-width: 768px) {
+            /* Navbar mobile */
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            nav ul li a {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            /* Selettore di lingua centrato */
+            .language-selector {
+                margin: 10px auto;
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+
+            .language-selector select {
+                width: 100%;
+                font-size: 16px;
+            }
+
+            /* Titolo e testo centrale */
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a id="dizionarioBtn" href="dizionario.html">Dizionario</a></li>
+            <li><a id="chatbotBtn" href="chatbot.html">Chatbot</a></li>
+            <li><a id="coniugaBtn" href="coniugatore.html">Coniugatore</a></li>
+        </ul>
+        <div class="language-selector">
+            <select id="language-select">
+                <option value="it">Italiano</option>
+                <option value="ar">Aršân</option>
+                <option value="en">Inglese</option>
+                <option value="cat">Catalano</option>
+            </select>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 id="title">Benvgnû int al noster sît!</h1>
+        <p id="description">Ché a't pō esplorêr na mócia ed funsionalitê: un dissiunâri, un chatbot e un coniugadōr ed verb.</p>
+    </div>
+    <script>
+        const translations = {
+            "it": {
+                "dizionarioBtn": "Dizionario",
+                "chatbotBtn": "Chatbot",
+                "coniugaBtn": "Coniugatore Verbi",
+                "title": "Benvenuto nel nostro sito!",
+                "description": "Esplora le nostre funzionalità: un dizionario, un chatbot e un coniugatore di verbi."
+            },
+            "en": {
+                "dizionarioBtn": "Dictionary",
+                "chatbotBtn": "Chatbot",
+                "coniugaBtn": "Verb Conjugator",
+                "title": "Welcome to our website!",
+                "description": "Explore our features: a dictionary, a chatbot, and a verb conjugator."
+            },
+            "ar": {
+                "dizionarioBtn": "Vocabolâri",
+                "chatbotBtn": "Bagaj dal ciac'ri",
+                "coniugaBtn": "Coniugadōr di verb",
+                "title": "Benvgnû int al noster sît!",
+                "description": "Ché a't pō esplorêr na mócia ed funsionalitê: un dissiunâri, un chatbot e un coniugadōr ed verb."
+            },
+            "cat": {
+                "dizionarioBtn": "Diccionari",
+                "chatbotBtn": "Xatbot",
+                "coniugaBtn": "Coniugador de verbs",
+                "title": "Benvingut al nostre lloc web!",
+                "description": "Explora les nostres funcionalitats: un diccionari, un xatbot i un conjugador de verbs."
+            }
+        };
+        document.getElementById("language-select").addEventListener("change", function() {
+            let lang = this.value;
+            document.getElementById("title").textContent = translations[lang].title;
+            document.getElementById("description").textContent = translations[lang].description;
+            document.getElementById("chatbotBtn").textContent = translations[lang].chatbotBtn;
+            document.getElementById("dizionarioBtn").textContent = translations[lang].dizionarioBtn;
+            document.getElementById("coniugaBtn").textContent = translations[lang].coniugaBtn;
+        });
+    </script>
+</body>
+</html>

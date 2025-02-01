@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coniugatore Dialetto Reggiano</title>
+  <link rel="stylesheet" href="coniugatore.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a id="dizionarioBtn" href="dizionario.html">Dizionario</a></li>
+        <li><a id="chatbotBtn" href="chatbot.html">Chatbot</a></li>
+        <li><a id="coniugaBtn" href="coniugatore.html"   class="active">Coniugatore</a></li>
+    </ul>
+    <div class="language-selector">
+        <select id="language-select">
+            <option value="it">Italiano</option>
+            <option value="ar">Aršân</option>
+            <option value="en">Inglese</option>
+            <option value="cat">Catalano</option>
+        </select>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Bagaj pr'imparêr i verb in Aršan</h1>
+    <input type="text" id="verbo-input" placeholder="Inserisci un verbo all'infinito (es. magnêr)">
+    <button id="coniuga-btn">Coniuga</button>
+    <div id="nomeVerbo"></div>
+    <div id="risultato" class="risultato"></div>
+  </div>
+  <script src="coniugatore.js"></script>
+</body>
+</html>

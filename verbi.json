@@ -1,0 +1,34 @@
+{
+  "verbi": [
+    { "infinito": "magnêr", "radiceAtona": "magn", "radiceTonica": "mâgn", "terminazione": "êr", "ausiliare": "aveir" },
+    { "infinito": "lavurêr", "radiceAtona": "lavur", "radiceTonica": "lavōr", "terminazione": "êr", "ausiliare": "avèir" },
+    { "infinito": "prilêr", "radiceAtona": "pril", "radiceTonica": "prél", "terminazione": "êr", "ausiliare": "avèir" },
+    { "infinito": "badêr", "radiceAtona": "bad", "radiceTonica": "bêd", "terminazione": "êr", "ausiliare": "avèir" },
+    { "infinito": "spustêr", "radiceAtona": "spust", "radiceTonica": "spôst", "terminazione": "êr", "ausiliare": "avèir" },
+    { "infinito": "pruvêr", "radiceAtona": "pruv", "radiceTonica": "prōv", "terminazione": "êr", "ausiliare": "avèir" },
+    { "infinito": "paghêr", "radiceAtona": "pagh", "radiceTonica": "pêgh", "terminazione": "êr", "ausiliare": "avèir" },
+    { "infinito": "vrèir", "radiceAtona": "vr", "radiceTonica": null, "terminazione": "èir", "ausiliare": "avèir" },
+    { "infinito": "prèir", "radiceAtona": "pr", "radiceTonica": null, "terminazione": "èir", "ausiliare": "avèir" },
+    { "infinito": "parèir", "radiceAtona": "par", "radiceTonica": "pêr", "terminazione": "èir", "ausiliare": "èsser" },
+    { "infinito": "piašèir", "radiceAtona": "paš", "radiceTonica": "piêš", "terminazione": "èir", "ausiliare": "èsser" },
+    { "infinito": "córrer", "radiceAtona": "cur", "radiceTonica": "córr", "terminazione": "er", "ausiliare": "avèir" },
+    { "infinito": "bâter", "radiceAtona": "bat", "radiceTonica": "bât", "terminazione": "er", "ausiliare": "avèir" },
+    { "infinito": "lēšer", "radiceAtona": "liš", "radiceTonica": "lēš", "terminazione": "er", "ausiliare": "avèir" },
+    { "infinito": "scréver", "radiceAtona": "scriv", "radiceTonica": "scrév", "terminazione": "er", "ausiliare": "avèir" },
+    { "infinito": "vènder", "radiceAtona": "vend", "radiceTonica": "vènd", "terminazione": "er", "ausiliare": "avèir" },
+    { "infinito": "rédder", "radiceAtona": "rid", "radiceTonica": "réd", "terminazione": "er", "ausiliare": "avèir" },
+    { "infinito": "crèder", "radiceAtona": "cherd", "radiceTonica": "crèd", "terminazione": "er", "ausiliare": "avèir" },
+    { "infinito": "vèder", "radiceAtona": "vd", "radiceTonica": "vèd", "terminazione": "er", "ausiliare": "avèir" },
+    
+    { "infinito": "dîr", "radiceAtona": "d’g’", "radiceTonica": "dég", "terminazione": "îr", "ausiliare": "avèir" },
+    { "infinito": "durmîr", "radiceAtona": "durm", "radiceTonica": "dôrm", "terminazione": "îr", "ausiliare": "avèir" },
+    { "infinito": "murîr", "radiceAtona": "mur", "radiceTonica": "mōr", "terminazione": "èir", "ausiliare": "èsser" }
+  ],
+  "irregolari": [
+    { "infinito": "andêr", "radiceAtona": "(a)nd", "radiceTonica": "", "terminazione": "êr", "ausiliare": "èsser", "presente": ["vâgh", "vê", "va", "andòmm", "andê", "vân"] },
+    { "infinito": "fêr", "radiceAtona": "f", "radiceTonica": "", "terminazione": "êr", "ausiliare": "avèir", "presente": ["fâgh", "fê", "fà", "fòmm", "fê", "fân"], "participio": "fât"},
+    { "infinito": "tōr", "radiceAtona": "tul", "radiceTonica": "tó", "terminazione": "èir", "ausiliare": "avèir", "presente": ["tógh", "tō", "tó", "tulòmm", "tulî", "tôšen"], "participio": "tôt"},
+    { "infinito": "gnîr", "radiceAtona": "gn", "radiceTonica": "vègn", "terminazione": "èir", "ausiliare": "èsser", "presente": ["végn", "vîn", "vîn", "gnòmm", "gnî", "vînen"] }
+  ]
+}
+  

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dissiunari Arzan</title>
+  <link rel="stylesheet" href="dizionario.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a id="dizionarioBtn" href="dizionario.html"  class="active">Dizionario</a></li>
+        <li><a id="chatbotBtn" href="chatbot.html">Chatbot</a></li>
+        <li><a id="coniugaBtn" href="coniugatore.html">Coniugatore</a></li>
+    </ul>
+    <div class="language-selector">
+        <select id="language-select">
+            <option value="it">Italiano</option>
+            <option value="ar">Aršân</option>
+            <option value="en">Inglese</option>
+            <option value="cat">Catalano</option>
+        </select>
+    </div>
+  </nav>
+  <div class="contDiz">
+    <h1>Disiunari Arzan</h1>
+    <div class="search-box">
+      <input type="text" id="word-input" placeholder="Scrév na parōla">
+      <button id="search-btn">Sèirca</button>
+    </div>
+    <div id="result" class="result-box">
+      <h2 id="word"></h2>
+      <p id="definition"></p>
+    </div>
+  </div>
+  <script src="dizionario.js"></script>
+</body>
+</html>

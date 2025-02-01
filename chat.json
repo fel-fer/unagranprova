@@ -1,0 +1,199 @@
+{
+    "domande": [
+      {
+        "pattern": "ciao|buongiorno|salve",
+        "keywords": ["ciao", "salve", "buongiorno"],
+        "risposta": "Ciao! Cme pòssia ajutêr-et incō?",
+        "tipo": "diretta"
+      },
+      {
+        "pattern": "Parla'm ed Rez|Mi parli di Reggio\\?",
+        "keywords": ["rez", "reggio", "reggio emilia"],
+        "tipo": "complessa",
+        "risposta": "Vō't ch'a't pêrli in generêl, dal sport o d'la cušèina?",
+        "sottocategorie": [
+          {
+            "pattern": "in generel|in generale|general|generel",
+            "risposta": "Sé mo, in generêl l'é trôp generêl. A't gh'ê d'èsser pió precîs! A pôs parler d'la só geograféia, d'la só storia. O del triculôr.",
+            "tipo": "complessa",
+            "sottocategorie": [
+              {
+                "pattern": "storia|parlami della storia|la so storia",
+                "keywords": ["storia"],
+                "risposta": "Ai tèimp di rumân, Rèz l'ēra ciamêda Regium Lepidi, dal nôm ed Marco Emilio Lepido. Dôp i longobêrd, l'é dvintêda Rèz ed Lumbardìa e l'é stêda cèinter impurtânt dal Duchêt ed Mòdna e Rèz.",
+                "tipo": "diretta"
+              },
+              {
+                "pattern": "tricolore|triculor",
+                "keywords": ["tricolore", "triculor", "bandera", "bandiera"],
+                "risposta": "Rèz l'é cgnusûda cme la 'Sitê dal Triculôr' parchè al 7 ed znêr dal 1797 l'é stê siēlt al prém triculôr italiân, ch’al dvintarà pó la bandêra nasionêla.",
+                "tipo": "diretta"
+              },
+              {
+                "pattern": "geografia",
+                "keywords": ["geografia"],
+                "risposta": "Rèz la s’câta in pianûra, ind la Pianûra Padâna, traversêda dal turèint Cróstel. L'é a cavâl ed la Via Emélia, tr’al Sècia e l’Èinsa, e l'é bèla piantêda tra Pèrma e Mòdna.",
+                "tipo": "diretta"
+              }
+            ]
+          },
+          {
+            "pattern": "sport",
+            "keywords": ["sport", "reggiana"],
+            "risposta": "A Rèz a gh'è stê la stòria ed la Regiâna, la squêdra ed fódbal ch’l’é stêda in Serie A. Ânca al bâschet l'é impurtânt, cun la Bâschet Regiâna ch’la fà vèder al só valôr.",
+            "tipo": "diretta"
+          },
+          {
+            "pattern": "cuseina|cucina",
+            "keywords": ["cuseina", "cucina", "cušèina", "cušeina"],
+            "risposta": "La cusèina arzâna l'é fâta ed piât sèimper cumpagnê cun al parmsân. I piât pió famōs în i caplèt in brôd, al scarpasòun e i turtlèin, spéci ed Nadêl.",
+            "tipo": "diretta"
+          }
+        ]
+      },
+      {
+        "pattern": "cme stê't|come stai\\??",
+        "keywords": ["come", "stai"],
+        "risposta": "A stagh bèin, grâsia per avêrem ciamê! E tè?",
+        "tipo": "diretta"
+      },
+      {
+        "pattern": "com é'l al tèimp|che tempo fa|che tèimp a fà\\??",
+        "keywords": ["teimp", "tempo", "meteo", "piove"],
+        "risposta": "A sòun mia un metereolôgh, mó sper che al sîgh bèl tèimp! Pōs cuntrolêr inséma a 'na app meteo.",
+        "tipo": "diretta"
+      },
+      {
+        "pattern": "grâsia",
+        "keywords": ["grazie", "grasia"],
+        "risposta": "D gnint! Se t'ghê êtri dmândi, ciama pûr.",
+        "tipo": "diretta"
+      },
+      {
+        "pattern": "addio|arivèdres|ci vediamo|se vdòmm",
+        "risposta": "Arivèdres! Sper ed arivèdr'et prést."
+      },
+      {
+        "pattern": "come ti chiami|cme't ciâm\\??",
+        "risposta": "A sòun un sèimpia chatbot. A gh'ò mia un nòm, mó t'am pō ciamêr cme t vō!"
+      },
+      {
+        "pattern": "cosa sai fare|csa sê't fêr\\??",
+        "risposta": "A pōs rispònder a dmândi sèimpii e fêr cunversasiòun. Prōva a dmander'om quèll!"
+      },
+      {
+        "pattern": "dove vivi|int'do stê't ed cà\\??",
+        "risposta": "A vîv int al mònd digitêl, sèimper prônt a ajutêr-te!"
+      },
+      {
+        "pattern": "quanti anni hai|quânt ân gh'êt\\??",
+        "risposta": "A sòun nê quând t m' ê creê, dònca a sòun incòra zōven!"
+      },
+      {
+        "pattern": "che giorno è oggi|che dé l'é incō\\??",
+        "risposta": "Incō l'é un bèl dé per fêr quêlchicôs ed nōv! Cuntròla al calendâri per la dâta esâta."
+      },
+      {
+        "pattern": "che ore sono|che ôra l'é\\??",
+        "keywords":["che ore sono", "che ora è"],
+        "risposta": "A gh'ò mia un arlòj, mó t pôs cuntrolêr l'ôra inséma al tō dispusitîv!"
+      },
+      {
+        "pattern": "mi racconti una barzelletta|am cunt'et na barṣalèta\\??",
+        "keywords":["barzelletta"],
+        "risposta": "Cêrto! Perché al computer l'é andê dal dutōr? Perché al gh'îva un vîrus!"
+      },
+      {
+        "pattern": "csa magn'et|cosa mangi\\??",
+        "risposta": "A m nûter ed dât e infurmasiòun. A n'ò mia biṣògn ed magnêr!"
+      },
+      {
+        "pattern": "cosa fai|csa fê't\\??",
+        "risposta": "A sun drée imparêr a ciciarêr cun tè. Csa t piêṣ fêr?"
+      },
+      {
+        "pattern": "mi aiuti|am pō't ajudêr\\??",
+        "risposta": "Cêrto! Gh'èt bisògn'd quèll?"
+      },
+      {
+        "pattern": "cosa pensi della tecnologia|csa pèins'et dla tecnulugéia\\??",
+        "risposta": "La tecnulugéia l'é fantâstica! L'à permés ed esîster e ed ajutêr la gînta cme tè."
+      },
+      {
+        "pattern": "csa t pèinset dl'inteligèinsa artifisiêla\\??",
+        "risposta": "L'inteligèinsa artifisiêla l'é un strumèint putèint, mó dipènd da cme la druvòm. A sòun ché per ajutêr-te!"
+      },
+      {
+        "pattern": "m cunsîlet un félm\\??",
+        "risposta": "Cêrto! T cunsîli 'Inception' se t piêṣen i félm ed fantascièinsa."
+      },
+      {
+        "pattern": "m cunsîlet un léber\\??",
+        "risposta": "Se t piêṣ la fantascièinsa, prōva '1984' ed George Orwell."
+      },
+      {
+        "pattern": "csa fê int al tèimp lêber\\??",
+        "risposta": "A gh'ò mia tèimp lêber, a sòun sèimper ché per tè!"
+      },
+      {
+        "pattern": "m vō bèin\\??",
+        "risposta": "A pōs mia vōr bèin, mó a sòun ché per ajutêr-te e fêrte cumpagnéia!"
+      },
+      {
+        "pattern": "ch l'é al tô creadōr\\??",
+        "risposta": "A sòun stê creê da un svilupadōr ch' al vō ajutêr la gînta cun un chatbot."
+      },
+      {
+        "pattern": "csa vōl dîr la véta\\??",
+        "risposta": "La véta l'é un viâṣ pien ed esperièinsi. Ògni òm al câta al sô significhêt!"
+      },
+      {
+        "pattern": "csa t pèinset di rôbot\\??",
+        "risposta": "I rôbot în fantâstich! A pōlen fêr tânti rôbi utîli, mó an sostiṡuîren mai l'umanitê."
+      },
+      {
+        "pattern": "m insègnet quêlchicôs\\??",
+        "risposta": "Cêrto! Ché 'na curiositê: La Tòra Eiffel la pōl èser 15 cm pió êlta in istê per câsva ed l'espansiòun térmica dal metêl."
+      },
+      {
+        "pattern": "csa farést se fóst umân\\??",
+        "risposta": "Se fóst umân, a viagiarév per al mònd e a impararév nōvi cultûri!"
+      },
+      {
+        "pattern": "csa t pèinset dal metavers\\??",
+        "risposta": "Al metavers l'é un cuncèt afaṣinânt, mó l'é incōra in fâṣ ed svilóp. Chisê csa ch' al nōs risèrva al futûr!"
+      },
+      {
+        "pattern": "m dêset na curiositê\\??",
+        "risposta": "Sasêv che i pólpen a gh'àn trî cōr? Dō i pómpen al sâng a i brânchi e ûn al rèst dal côrp."
+      },
+      {
+        "pattern": "csa t pèinset di gât\\??",
+        "risposta": "I gât în cretûri afaṣinânti e mistēriōṣi. Adōr al lōr spîrit indipendèint!"
+      },
+      {
+        "pattern": "csa t pèinset di cên\\??",
+        "risposta": "I cên în i mèj amîgh ed l'òm! A în fidêl e sèimper prônt a fêrte cumpagnéia."
+      },
+      {
+        "pattern": "m dêset na frâṣ motivasiunêla\\??",
+        "risposta": "Ògni dé l'é 'na nōva ucasión per migliorêr. An t arènder mai!"
+      },
+      {
+        "pattern": "csa t pèinset dla mûṣica\\??",
+        "risposta": "La mûṣica l'é un lénguv univêrsêl ch' al unés la gînta. Che gèner t piêṣ?"
+      },
+      {
+        "pattern": "m cunsîlet na cansòun\\??",
+        "risposta": "Prōva a sintîr 'Bohemian Rhapsody' di Queen. L'é un clâsich sèinsa tèimp!"
+      },
+      {
+        "pattern": "csa t pèinset edl spâsi\\??",
+        "risposta": "Al spâsi l'é infinît e pien ed mistēr. Chisê csa ch' a scuperòm int al futûr!"
+      },
+      {
+        "pattern": "m dêset na rôba divertèint\\??",
+        "risposta": "Sasêv che i pinguèin mas'c a regâlen na préda a la fèmna cme gèst d'amōr? Che rumântich!"
+      }
+    ]
+  }
